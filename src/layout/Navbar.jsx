@@ -51,7 +51,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end space-x-2">
-            <FaCartPlus className="btn bg-primary outline-primary text-white text-sm" />
+            <button className="btn bg-primary"><FaCartPlus className=" bg-primary outline-primary text-white text-sm" /></button>
 
 
           <button className="btn outline-primary">Login</button>
