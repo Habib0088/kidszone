@@ -8,7 +8,7 @@ export const metadata = {
 };
 const Products = async () => {
   const productItems = await getProducts();
-  // console.log(productItems);
+
 
   return (
     <div className="md:w-11/12 mx-auto">

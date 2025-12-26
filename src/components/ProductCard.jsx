@@ -15,7 +15,7 @@ const ProductCard = ({ product }) => {
     reviews,
     sold,
   } = product;
-console.log(product);
+
 
   const discountedPrice = price - (price * discount) / 100;
 

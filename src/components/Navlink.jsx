@@ -1,16 +1,17 @@
-'use client'
+'use client';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 const Navlink = ({ href = '', children }) => {
   const path = usePathname();
 
-  if (!href || !path) return null;
+  // href না থাকলে সরাসরি লিখাই ভালো
+  if (!href) return null;
 
   const isActive =
     href === '/'
       ? path === '/'
-      : path.startsWith(href);
+      : typeof path === 'string' && path.startsWith(href);
 
   return (
     <Link
